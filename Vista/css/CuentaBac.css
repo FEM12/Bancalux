@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{ padding: 0; margin:0; box-sizing: border-box; font-family: 'Roboto', sans-serif; user-select: none;}
+
+:root{
+
+  --text-color: #FFFFFF;
+  --text-color-shadow: #757575;
+  --card-font-color: #FFFFFF;
+  --principal-color: #F7BD12;
+  --principal-color-shadow: #DAA402;
+  --box-text:  #dbdbdb;
+  --font: #20242E;
+  --link-color: #000000;
+
+}
+
+main{
+
+  width: 100%;
+  height: 100vh;
+  background: var(--font);
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23696969' fill-opacity='0.22'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container{ 
+    
+  width: 400px;
+  height: 300px;
+  background: var(--card-font-color);
+  border-radius: 8px;
+  padding-top: 50px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+
+}
+
+.forma{
+
+  width: 280px;
+  height: 65px;
+  border-radius: 8px 0px 0px;
+  background: linear-gradient(135deg,var(--principal-color) 95%, transparent 5%);
+  color: var(--text-color);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+input[type="text"],input[type="number"]{
+
+  width: 80%;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: var(--box-text);
+
+}
+
+input[type="text"]{ cursor: default; color: var(--text-color-shadow);}
+
+input[type="submit"]{
+
+  width: 80%;
+  border-radius: 5px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: var(--principal-color);
+  color: var(--text-color);
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 15px;
+
+}
+
+input[type="submit"]:hover{ background: var(--principal-color-shadow); transition: 0.4s;  }
