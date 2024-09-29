@@ -1,95 +1,244 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" class="!bg-white"> <!--Color blanco de la pagina-->
 
-<head>
+  <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Bancalux | Inicio</title>
 
-    <title>Home</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-</head>
-
-<body>
-
-    <div class="card">
-
-        <section class="image"><img src="img/cliente.png" alt="cliente"></section>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
 
 
-        <section class="text">
+    
+    <!-- AOS Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-            <h1>CLIENTES</h1>
-            <p>Acceso libre para afiliados</p>
+  </head>
+  <body>
 
-        </section>
+    <style>
+        body{
+            background-color: #0f172a;
+            background-image: radial-gradient(circle at 85% 32%, rgba(22, 78, 99, 0.2) 15%, transparent 35%), 
+                            radial-gradient(circle at 27% 51%, rgba(22, 78, 99, 0.5) 1%, transparent 50%), 
+                            radial-gradient(circle at 50% 50%, rgba(22, 78, 99, 0.1) 10%, transparent 50%);
+            background-size: cover;
+            background-attachment: fixed;
 
-        <a href="Vista/login.php" class='bx bxs-chevron-right'></a>
 
-        <section class="log">
-            <p>Loguearse</p>
-        </section>
+}
 
+    </style>
+
+    <!-- <nav class="bg-slate-900 px-5 py-3" data-aos="fade-up">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"/>
+              </svg>
+          <h1 class="text-2xl text-white font-bold">| Bancalux</h1>
+        </div>
+        
+    </nav> -->
+
+    <nav data-aos="fade-down" class="bg-slate-950 bg-opacity-0 fixed top-0 left-0 w-full z-10" id="navbar">
+        <ul
+            class="text-zinc-50 text-lg mx-auto flex flex-col md:flex-row items-center justify-between px-[8rem] md:gap-5 pt-3 md:py-3">
+
+            <li class="flex flex-row items-center font-bold text-2xl">
+              
+                <!-- Logo Bancalux -->
+              <div class="relative inline-block w-[2.5rem] h-[2.5rem] mr-2">
+                <!-- Ícono de banca (fondo) -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute inset-0 text-zinc-200 opacity-40 w-full h-full" viewBox="0 0 16 16">
+                  <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"/>
+                </svg>
+              
+                <!-- Ícono de dólar (superpuesto) -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute inset-0 bottom-4 m-auto w-[1.2rem] h-[1.2rem] text-white" viewBox="0 0 16 16">
+                  <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+                </svg>
+              </div>
+              
+                | Bancalux
+            </li>
+
+            <!-- <div class=" flex flex-col md:flex-row items-center md:gap-[5rem] gap-5">
+                <li class="hover:bg-[#553d3a] px-3 py-2 rounded-md">Inicio</li>
+                <li class="hover:bg-[#553d3a] px-3 py-2 rounded-md">Catalogo</li>
+                <li class="hover:bg-[#553d3a] px-3 py-2 rounded-md">Tipos de Café</li>
+            </div> -->
+
+            <!-- <div class="flex flex-col md:flex-row items-center md:gap-[2rem] gap-5">
+                <a href="">
+                    <li class="justify-self-end bg-slate-700 hover:bg-slate-800 px-3 py-2 rounded-md hidden md:block" id="navbarBgLi">
+                        Registrarse</li>
+                </a>
+
+                <a href="">
+                    <li class="hidden md:block hover:bg-[#98694d] p-2.5 rounded-md">Iniciar Sesion</li>
+                </a>
+            </div> -->
+
+        </ul>
+    </nav>
+
+    <div class="hero hero-background min-h-screen">
+        <div class="hero-content text-center" data-aos="fade-down" data-aos-delay="400">
+          <div class="">
+            <h1 class="text-5xl md:text-7xl font-bold items-center font-bold text-white">
+                
+                <!-- Logo Bancalux -->
+                <div class="relative inline-block w-[4rem] h-[4rem] mr-2">
+                  <!-- Ícono de banca (fondo) -->
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute inset-0 text-white opacity-50 w-full h-full" viewBox="0 0 16 16">
+                    <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"/>
+                  </svg>
+                
+                  <!-- Ícono de dólar (superpuesto) -->
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute inset-0 bottom-4 m-auto w-[1.8rem] h-[1.8rem] text-white" viewBox="0 0 16 16">
+                    <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+                  </svg>
+                </div>| Bancalux
+
+            </h1>
+
+                <h1 class="text-4xl md:text-6xl font-bold items-center font-bold text-white mt-[3rem]">
+                    Innovando tu experiencia financiera
+                </h1>
+            <p class="py-6 text-white text-xl">
+                Tu banco confiable, en cualquier momento, en cualquier lugar.
+            </p>
+            <button class="mt-4 btn bg-cyan-950 border-cyan-900 hover:bg-cyan-800 hover:border-2 hover:border-cyan-900 text-white border border-2 border-cyan-900">Iniciar Sesión</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="min-h-screen">
+            <h1 class="text-center md:text-6xl text-5xl font-bold text-white md:pt-[5rem] pt-5">Funcionalidad al alcance de todos</h1>
+            <div class="grid grid-rows-3 lg:grid-cols-3 mt-[6rem] place-items-stretch text-center gap-5 mx-5 md:mx-[10rem] pb-[3rem] lg:pb-0">
+
+                <div class="card bg-black/30 backdrop-blur-lg py-5 px-5 rounded-box grid flex-grow ">
+                    <h1 class="text-white text-4xl">
+                        <i class="fi fi-rs-head-side-mask"></i>
+                    </h1>
+                    <h1 class="text-white text-2xl font-bold">
+                        Clientes
+                    </h1>
+                    <p class="text-center text-white">Acceso libre para afiliados</p>
+                </div>
+
+                <div class="card bg-black/30 backdrop-blur-lg py-5 px-5 rounded-box grid flex-grow ">
+                    <h1 class="text-white text-4xl">
+                        <i class="fi fi-rs-head-side-mask"></i>
+                    </h1>
+                    <h1 class="text-white text-2xl font-bold">
+                        Cajeros
+                    </h1>
+                    <p class="text-center text-white">Solo personal Autorizado</p>
+                </div>
+
+                <div class="card bg-black/30 backdrop-blur-lg py-5 px-5 rounded-box grid flex-grow ">
+                    <h1 class="text-white text-4xl">
+                        <i class="fi fi-rs-head-side-mask"></i>
+                    </h1>
+                    <h1 class="text-white text-2xl font-bold">
+                        Gerente
+                    </h1>
+                    <p class="text-center text-white">Solo personal Autorizado</p>
+                </div>
+    
+            </div>
+      </div>
+
+      <div class="min-h-screen">
+        <h1 class="text-center md:text-6xl text-5xl font-bold text-white md:pt-[5rem] pt-5">Sin cuenta? Registrate y unete a nuestra banca</h1>
+
+        <div class="grid grid-rows-1 lg:grid-cols-1 mt-[6rem] place-items-stretch text-center gap-5 mx-5 md:mx-[10rem] pb-[3rem] lg:pb-0">
+            <div class="card bg-black/30 backdrop-blur-lg py-5 px-5 rounded-box grid flex-grow ">
+                <h1 class="text-white text-4xl">
+                    <i class="fi fi-rs-head-side-mask"></i>
+                </h1>
+                <h1 class="text-white text-2xl font-bold">
+                    Registrarse
+                </h1>
+                <p class="text-center text-white">Acceso libre para afiliados.</p>
+            </div>
+        </div>
+      </div>
+
+      
+
+        
 
     </div>
-    <div class="card">
 
-        <section class="image"><img src="img/registro.png" alt="cajero"></section>
+    
 
-        <section class="text">
+    <footer class="footer footer-center p-5 bg-slate-900 text-primary-content">
+        <aside>
+            <div class="flex flex-row items-center font-bold text-2xl text-white"><!-- Logo Bancalux -->
+                <div class="relative inline-block w-[2.5rem] h-[2.5rem] mr-2">
+                  <!-- Ícono de banca (fondo) -->
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute inset-0 text-zinc-200 opacity-40 w-full h-full" viewBox="0 0 16 16">
+                    <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"/>
+                  </svg>
+                
+                  <!-- Ícono de dólar (superpuesto) -->
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute inset-0 bottom-4 m-auto w-[1.2rem] h-[1.2rem] text-white" viewBox="0 0 16 16">
+                    <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+                  </svg>
+                </div>
+                
+                  | Bancalux
+            </div>
+            <p class="font-bold text-white">
+                Administracion de Proyectos <br>ADP | 404
+            </p>
+            <p class="text-white">Copyright © 2024 - Todos los Derechos Reservados</p>
+        </aside>
+    </footer>
 
-            <h1>REGISTRARSE</h1>
-            <p>Acceso libre para afiliados</p> 
 
-        </section>
 
-        <a href="Vista/registro.php" class='bx bxs-chevron-right'></a>
+    <!-- AOS Animate on Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <section class="log">
-            <p>Registro</p>
-        </section>
+    <script>
+        AOS.init();
+    </script>
 
-    </div>
-    <div class="card">
+    <!-- Cambiar Nav Segun Scroll -->
+    <script>
+        document.addEventListener("scroll", function(){
+            let navbar = document.getElementById("navbar");
+            let navbarBgLi =document.getElementById("navbarBgLi");
 
-        <section class="image"><img src="img/cajero.png" alt="cajero"></section>
+            if (window.scrollY === 0){
+                console.log("Scroll en 0");
 
-        <section class="text">
+                navbar.classList.remove("bg-[#c09061]");
+                navbar.classList.add("bg-opacity-0");
 
-            <h1>CAJEROS</h1>
-            <p>(Solo personal autorizado)</p> 
+                navbarBgLi.classList.remove("bg-[#98694d]");
+                navbarBgLi.classList.add("bg-[#c09061]");
 
-        </section>
+            } else {
+                console.log("Scroll Activado " + window.scrollY);
 
-        <a href="Vista/logCajero.php" class='bx bxs-chevron-right'></a>
+                navbar.classList.remove("bg-slate-950", "bg-opacity-0");
+                navbar.classList.add("bg-slate-900");
 
-        <section class="log">
-            <p>Loguearse</p>
-        </section>
-
-    </div>
-    <div class="card">
-
-        <section class="image"><img src="img/gerente.png" alt="cajero"></section>
-
-        <section class="text">
-
-            <h1>Gerente</h1>
-            <p>(Solo personal autorizado)</p> 
-
-        </section>
-
-        <a href="Vista/logGerente.php" class='bx bxs-chevron-right'></a>
-
-        <section class="log">
-            <p>Loguearse</p>
-        </section>
-
-    </div>
+                navbarBgLi.classList.remove("bg-[#c09061]");
+                navbarBgLi.classList.add("bg-[#98694d]", "hover:bg-[#98695d]");
+            }
+        });
+    </script>
 
 </body>
 </html>
