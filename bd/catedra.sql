@@ -32,11 +32,11 @@ CREATE TABLE IF NOT EXISTS `cajero` (
   `idCajero` int NOT NULL AUTO_INCREMENT,
   `nombre` text NOT NULL,
   `apellido` text NOT NULL,
-  `usuario` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `usuario` text CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
   `contrasena` text NOT NULL,
   `dui` int NOT NULL,
   PRIMARY KEY (`idCajero`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
 -- Volcado de datos para la tabla `cajero`
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `cliente` (
   `DUI` varchar(10) NOT NULL,
   `sucursal` varchar(100) NOT NULL,
   PRIMARY KEY (`idCliente`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
 -- Volcado de datos para la tabla `cliente`
@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `cuentabanc` (
   `idCliente` int NOT NULL,
   `fechaCrea` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
 -- Volcado de datos para la tabla `cuentabanc`
@@ -121,7 +121,7 @@ CREATE TABLE IF NOT EXISTS `empleado` (
   `rol` varchar(50) NOT NULL,
   `estado` varchar(30) NOT NULL,
   PRIMARY KEY (`idEmpleado`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
 -- Volcado de datos para la tabla `empleado`
@@ -146,7 +146,7 @@ CREATE TABLE IF NOT EXISTS `gerentesucursal` (
   `usuario` varchar(30) NOT NULL,
   `contraseña` varchar(30) NOT NULL,
   PRIMARY KEY (`idGerente`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
 -- Volcado de datos para la tabla `gerentesucursal`
@@ -173,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `movimientos` (
   `idCliente` int NOT NULL,
   `fechaTransac` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
 -- Volcado de datos para la tabla `movimientos`
@@ -202,7 +202,7 @@ CREATE TABLE IF NOT EXISTS `prestamos` (
   `idCliente` int NOT NULL,
   `estado` varchar(100) NOT NULL,
   PRIMARY KEY (`idPrestamo`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
 -- Volcado de datos para la tabla `prestamos`
