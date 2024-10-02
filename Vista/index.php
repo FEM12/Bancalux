@@ -59,7 +59,7 @@
 
         <main class="w-full max-w-3xl mx-auto p-8 mt-10">
             <h2 class="text-3xl font-bold text-center text-white mb-6">¡Bienvenido! 
-                <?php foreach ($resultados as $fila) { echo $fila['nombre'] . ' ' . $fila['apellido']; } ?>
+                <?php foreach ($resultados as $fila) { echo $fila['nombre'] . ' ' . $fila['apellido']; break;} ?>
             </h2>
 
             <!-- Alertas -->
