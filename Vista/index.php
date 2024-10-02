@@ -88,11 +88,11 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Card 1 - Información de la Cuenta -->
     <?php foreach ($resultados as $fila): ?>
-    <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
-        <h1 class="text-lg font-bold">Cuenta: <?php echo $fila['numerocuenta']; ?></h1>
-        <p class="text-gray-600">Nombre: <?php echo $fila['nombre'] . ' ' . $fila['apellido']; ?></p>
-        <p class="text-gray-600">Saldo: $<?php echo number_format($fila['saldo'], 2); ?></p>
-        <p class="text-gray-600">Fecha de Creación: <?php echo date("d-m-Y", strtotime($fila['fechaCrea'])); ?></p>
+    <div class="bg-black/30 backdrop-blur-lg p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
+        <h1 class="text-lg text-white font-bold">Cuenta: <?php echo $fila['numerocuenta']; ?></h1>
+        <p class="text-white">Nombre: <?php echo $fila['nombre'] . ' ' . $fila['apellido']; ?></p>
+        <p class="text-white">Saldo: $<?php echo number_format($fila['saldo'], 2); ?></p>
+        <p class="text-white">Fecha de Creación: <?php echo date("d-m-Y", strtotime($fila['fechaCrea'])); ?></p>
         <a href="detalleCuenta.php?id=<?php echo $fila['numerocuenta']; ?>" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600">
             Ver Detalles
         </a>

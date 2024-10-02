@@ -57,27 +57,27 @@ if (!isset($usuario)) {
     <h2 class="text-3xl font-bold text-center text-white mb-6">Opciones disponibles</h2> <!-- Título centrado -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Card 1 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
+        <div class="bg-black/30 backdrop-blur-lg p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
             <img src="../img/registro.png" alt="deposito" class="w-16 h-16 mx-auto mb-4">
-            <h1 class="text-lg font-bold">Registrar empleados</h1>
+            <h1 class="text-lg font-bold text-white">Registrar empleados</h1>
             <a href="registroCajero.php?id=<?php echo $usuario ?>" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600">
                 Nuevo empleado
             </a>
         </div>
 
         <!-- Card 2 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
+        <div class="bg-black/30 backdrop-blur-lg p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
             <img src="../img/cliente.png" alt="deposito" class="w-16 h-16 mx-auto mb-4">
-            <h1 class="text-lg font-bold">Administrar empleados</h1>
+            <h1 class="text-lg font-bold text-white">Administrar empleados</h1>
             <a href="adminEmpleados.php?id=<?php echo $usuario ?>" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600">
                 Administrar
             </a>
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
+        <div class="bg-black/30 backdrop-blur-lg p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
             <img src="../img/cajero.png" alt="registro" class="w-16 h-16 mx-auto mb-4">
-            <h1 class="text-lg font-bold">Registrar un nuevo cajero</h1>
+            <h1 class="text-lg font-bold text-white">Registrar un nuevo cajero</h1>
             <a href="registroCajero2.php?id=<?php echo $usuario ?>" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600">
                Nuevo cajero
             </a>
@@ -85,9 +85,9 @@ if (!isset($usuario)) {
     </div>
 
     <!-- Card 4 - Casos de Préstamos centrado -->
-    <div class="bg-white p-6 rounded-lg shadow-lg text-center mt-8 col-span-3 transition-transform duration-300 hover:scale-105">
+    <div class="bg-black/30 backdrop-blur-lg p-6 rounded-lg shadow-lg text-center mt-8 col-span-3 transition-transform duration-300 hover:scale-105">
         <img src="../img/prestamo.png" alt="prestamos" class="w-16 h-16 mx-auto mb-4">
-        <h1 class="text-lg font-bold">Casos de Préstamos</h1>
+        <h1 class="text-lg font-bold text-white">Casos de Préstamos</h1>
         <a href="casosPrestamos.php?id=<?php echo $usuario ?>" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600">
             Ir a prestamos
         </a>

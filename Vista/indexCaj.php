@@ -93,40 +93,40 @@
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Card 1 - Depósitos -->
-    <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
+    <div class="bg-black/30 backdrop-blur-lg p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
         <img src="../img/deposito.png" alt="Depositos" class="w-16 h-16 mx-auto mb-4">
-        <h1 class="text-lg font-bold">Depositos</h1>
-        <p class="text-gray-600">Realiza depósitos en la cuenta de tus clientes de manera rápida y sencilla.</p>
+        <h1 class="text-lg font-bold text-white">Depositos</h1>
+        <p class="text-zinc-50">Realiza depósitos en la cuenta de tus clientes de manera rápida y sencilla.</p>
         <a href="deposito.php?id=<?php echo $usuario ?>" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600">
             Ingresar
         </a>
     </div>
 
     <!-- Card 2 - Retiros -->
-    <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
+    <div class="bg-black/30 backdrop-blur-lg p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
         <img src="../img/retiro.png" alt="Retiros" class="w-16 h-16 mx-auto mb-4">
-        <h1 class="text-lg font-bold">Retiros</h1>
-        <p class="text-gray-600">Permite a tus clientes retirar fondos de su cuenta de forma segura.</p>
+        <h1 class="text-lg font-bold text-white">Retiros</h1>
+        <p class="text-zinc-50">Permite a tus clientes retirar fondos de su cuenta de forma segura.</p>
         <a href="retiro.php?id=<?php echo $usuario ?>" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600">
             Ingresar
         </a>
     </div>
 
     <!-- Card 3 - Registrar Clientes -->
-    <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
+    <div class="bg-black/30 backdrop-blur-lg p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
         <img src="../img/registro.png" alt="Registrar Clientes" class="w-16 h-16 mx-auto mb-4">
-        <h1 class="text-lg font-bold">Registrar Clientes</h1>
-        <p class="text-gray-600">Agrega nuevos clientes al sistema para brindarles un mejor servicio.</p>
+        <h1 class="text-lg font-bold text-white">Registrar Clientes</h1>
+        <p class="text-zinc-50">Agrega nuevos clientes al sistema para brindarles un mejor servicio.</p>
         <a href="registrarCliente.php?id=<?php echo $usuario ?>" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600">
             Ingresar
         </a>
     </div>
 
     <!-- Card 4 - Préstamos -->
-    <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
+    <div class="bg-black/30 backdrop-blur-lg p-6 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
         <img src="../img/prestamo.png" alt="Prestamos" class="w-16 h-16 mx-auto mb-4">
-        <h1 class="text-lg font-bold">Prestamos</h1>
-        <p class="text-gray-600">Gestiona y otorga préstamos a tus clientes con facilidad.</p>
+        <h1 class="text-lg font-bold text-white">Prestamos</h1>
+        <p class="text-zinc-50">Gestiona y otorga préstamos a tus clientes con facilidad.</p>
         <a href="prestamos.php?id=<?php echo $usuario ?>" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600">
             Ingresar
         </a>

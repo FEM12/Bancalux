@@ -69,7 +69,7 @@
                 ?>
                 
 
-                <input type="text" name="nombre" id="nombre" value="<?php echo $dato ?>" readonly >
+                <input type="text" name="nombre" id="nombre" value="<?php echo $dato ?>" readonly>
                 <input type="text" name="apellido" id="apellido" value="<?php echo $dato2?>" readonly>
                 <input type="text" name="correo" id="correo" value="<?php echo $dato3?>" readonly>
                 <input type="text" name="saldo" id="saldo" value="Saldo disponible: <?php echo $dato4?>" readonly>
