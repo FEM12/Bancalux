@@ -11,38 +11,25 @@ $idCliente = $_POST['idCliente'];
 
 $validacion_correcta = false;
 
-if ($sueldo > 0 && $sueldo < 365) {
-
-  if ($prestamo <= 10000) {
-    $validacion_correcta = true;
-  } else {
-
-    echo '<script> alert("Muy poquito sueldo"); window.location = "../Vista/PrestamosCli.php"; </script>';
-  }
-} elseif ($sueldo > 0 && $sueldo < 600) {
-
-  if ($prestamo <= 25000) {
-    $validacion_correcta = true;
-  } else {
-
-    echo '<script> alert("Muy poquito sueldo"); window.location = "../Vista/PrestamosCli.php"; </script>';
-  }
-} elseif ($sueldo > 0 && $sueldo < 900) {
-
-  if ($prestamo <= 35000) {
-    $validacion_correcta = true;
-  } else {
-
-    echo '<script> alert("Muy poquito sueldo"); window.location = "../Vista/PrestamosCli.php"; </script>';
-  }
-} elseif ($sueldo > 0 && $sueldo > 1000) {
-
-  if ($prestamo <= 50000) {
-    $validacion_correcta = true;
-  } else {
-
-    echo '<script> alert("Muy poquito sueldo"); window.location = "../Vista/PrestamosCli.php"; </script>';
-  }
+if ($sueldo > 0 && $sueldo <= 365 && $prestamo <= 10000) {
+  $validacion_correcta = true;
+}else {
+  $validacion_correcta = false;
+}
+if ($sueldo > 365 && $sueldo <= 600 && $prestamo <= 25000) {
+  $validacion_correcta = true;
+} else {
+  $validacion_correcta = false;
+}
+if ($sueldo > 600 && $sueldo <= 900 && $prestamo <= 35000) {
+  $validacion_correcta = true;
+} else {
+  $validacion_correcta = false;
+}
+if ($sueldo > 900 && $sueldo <= 2000 && $prestamo <= 5000) {
+  $validacion_correcta = true;
+} else {
+  $validacion_correcta = false;
 }
 
 if ($validacion_correcta) { // Se realiza la inserción solo si se cumple alguna de las condiciones de validación
@@ -65,4 +52,4 @@ if ($validacion_correcta) { // Se realiza la inserción solo si se cumple alguna
 
     echo "<div class='alert alert-danger' role='alert'>Error al crear la cuenta</div> " . $e->getMessage();
   }
-}
+} else{ header("location:../Vista/indexCliente.php?error=error"); }

@@ -7,7 +7,7 @@ session_start();
 $usuario = $_SESSION['idCliente'];
 
 if (!isset($usuario)) {
-  header("location:../Vista/registroCliente.php");
+  header("location:../Vista/indexCliente.php");
 }
 
 $consulta = "SELECT nombre, apellido, correo FROM cliente WHERE idCliente = :idCliente";

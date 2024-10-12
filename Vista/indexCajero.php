@@ -84,10 +84,6 @@
       if (isset($_GET['retiro'])) {
         echo '<div class="mt-6 text-center text-green-500">Éxito: Se ha retirado de la Cuenta!</div>';
       }
-
-      if (isset($_GET['cuentacre'])) {
-        echo '<div class="mt-6 text-center text-green-500">Éxito: Se ha creado la cuenta!</div>';
-      }
     ?>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">

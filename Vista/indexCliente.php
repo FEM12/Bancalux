@@ -99,7 +99,7 @@ $resultados2 = $stmt2 -> fetchAll(PDO::FETCH_ASSOC);
       }
       
       if(isset($_GET['error'])) {
-        echo '<div class="mt-6 text-center text-red-500">Érror: monto a retirar excede el saldo actual</div>';
+        echo '<div class="mt-6 text-center text-red-500">Érror: tu salario es muy bajo para ese prestamo</div>';
       }
     ?>
 

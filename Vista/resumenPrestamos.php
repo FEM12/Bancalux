@@ -28,7 +28,7 @@ $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <script src="https://cdn.tailwindcss.com"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <title>Cliente</title>
+  <title>Prestamos solicitados</title>
 
   <style>
     ::-webkit-scrollbar {
