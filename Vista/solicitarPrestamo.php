@@ -126,7 +126,7 @@ $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
           </div>
 
-          <input type="hidden" name="estado" id="prestamo" value="Procesando solicitud">
+          <input type="hidden" name="estado" id="prestamo" value="Procesando Solicitud">
           <input type="hidden" name="idCliente" id="idCliente" value="<?php echo $usuario ?>" readonly>
 
           <!-- Botón de Solicitar Préstamo -->
